@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANEL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+body{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    }
+
+header{
+    width: 100%;
+    background-color: rgb(124, 6, 142);
+     }
+        
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+    }
+
+header label:hover{
+    cursor: pointer;
+    background-color: beige;
+    }
+        
+        
+/*menu*/
+#hola{
+    display: none;
+    }
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+        }
+
+.menu li a{
+    display:block ;
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    }
+        
+.menu li:hover{
+    background-color: rgb(232, 180, 22);
+    }
+        
+.menu li{
+    flex-grow: 1;
+    border-right: 1px solid #fff;
+    }
+       
+
+@media(max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background-color: rgb(117, 23, 114);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0,5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-right: 1px solid #fff;
+    }
+   
+}
+
+#hola:checked~ .menu{
+    margin: 0;
+}
+
+/*imagenes*/
+.logo1{
+    width: 27px;
+    height: 27px;
+}
+
+.logo2{
+    width: 37px;
+    height: 37px;
+    }
+    
+.logo3{
+    width: 37px;
+    height: 37px;
+    transition:all .5s ease-in-out;
+      }
+
+.logo3:hover{
+   border-radius:50%;
+   -webkit-border-radius:50%;
+   box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+   transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+    }
+
+/*button*/
+.ker{
+    background-color: #868585;
+    border-radius: 3em;
+    color: #ffffff;
+    width: 78px;
+    height: 37px;
+     }
+
+.ker:hover{
+    box-shadow: 0px 0px 15px 15px #ffe606;
+    -webkit-box-shadow: 0px 0px 15px 15px #ffd70e
+         }
+
+/*textos*/
+h3{
+    background-color: #000000;
+    color: #ffffff;
+    margin: 6;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color:  #940505;
+    background-color: #ddd;
+    }
+
+
+/*section*/
+#TD,#TP{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://estaticos.elcolombiano.com/binrepository/1004x565/112c0/780d565/none/11101/HVPL/ttkvqavgbfgsrli5lphnnpip2a_41445790_20230121160331.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: aliceblue;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://estaticos.elcolombiano.com/binrepository/1004x565/112c0/780d565/none/11101/HVPL/ttkvqavgbfgsrli5lphnnpip2a_41445790_20230121160331.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+     }
+
+    </style>
+  
+</head>
+<body>
+    <header>
+        <br>
+        
+    <h1>EL BLOG DEL FPC</h1>
+        <input type="checkbox" id="hola">
+        <label for="hola"><img class="logo1" src="https://cdn-icons-png.flaticon.com/512/39/39935.png">
+        </label>
+        <nav class="menu">
+
+<ul>
+  <li><a target="_blank" href="#TP">TABLA LIGA</a></li> 
+  <li><a target="_blank" href="#TD">DESCENSO</a></li>
+  <li><a target="_blank" href="https://resultados-bet.blogspot.com/2023/05/traspasos-y-salidas-liga-betplay-ii.html">TRASPASOS</a></li>
+  <li><a target="_blank" href="https://resultados-bet.blogspot.com/2023/01/copa-betplay.html">COPA BETPLAY</a></li>
+  <li><a target="_blank" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcwMivOMMw1YPRiK8kvykvNBwA6bQYJ&q=torneo&oq=&aqs=chrome.1.46i39i362l2j46i39i199i362i465j69i59i450j0i3i66i143i362j46i3i143i362j0i3i66i143i362j46i3i143i362.1442j0j15&sourceid=chrome&ie=UTF-8#sie=lg;/g/11trdbxm0v;2;/m/026sh1m;st;fp;1;;;">TORNEO</a></li>
+</ul>
+        </nav>
+    </header>
+
+  
+
+<a href="https://www.transfermarkt.co/atletico-nacional/startseite/verein/8172/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Escudo_de_Atl%C3%A9tico_Nacional.png/418px-Escudo_de_Atl%C3%A9tico_Nacional.png" alt=""></a>
+<a href="https://www.transfermarkt.co/millonarios-fc/startseite/verein/2350/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Escudo_de_Millonarios_F%C3%BAtbol_Club.svg/1200px-Escudo_de_Millonarios_F%C3%BAtbol_Club.svg.png" alt=""></a>
+<a href="https://www.transfermarkt.co/junior-fc/startseite/verein/11854/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Escudo_de_Atl%C3%A9tico_Junior.svg/897px-Escudo_de_Atl%C3%A9tico_Junior.svg.png" alt=""></a>
+<a href="https://www.transfermarkt.co/deportes-tolima/startseite/verein/10503/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Escudo_Deportes_Tolima_Sin_A%C3%B1o_2.png" alt=""></a>
+<a href="https://www.transfermarkt.co/independiente-medellin/startseite/verein/10093/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Escudo_del_Deportivo_Independiente_Medell%C3%ADn.png/600px-Escudo_del_Deportivo_Independiente_Medell%C3%ADn.png" alt=""></a>
+<a href="https://www.transfermarkt.co/independiente-santa-fe/startseite/verein/11648/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Escudo_de_Independiente_Santa_Fe.png" alt=""></a>
+<a href="https://www.transfermarkt.co/rionegro-aguilas/startseite/verein/20590/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/en/a/aa/LogoAguilasPereira.png" alt=""></a>
+<a href="https://www.transfermarkt.co/deportivo-cali/startseite/verein/9961/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Escudo_del_Deportivo_Cali.svg/1200px-Escudo_del_Deportivo_Cali.svg.png" alt=""></a>
+<a href="https://www.transfermarkt.co/cd-america-de-cali/startseite/verein/2352/saison_id/2022"><img class="logo2" src="https://www.americadecali.co/wp-content/uploads/2018/01/logo-05.png" alt=""></a>
+<a href="https://www.transfermarkt.co/deportivo-pereira/startseite/verein/9811/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Escudo_Deportivo_Pereira_DP_Campeon_2022_II.png" alt=""></a>
+<a href="https://www.transfermarkt.co/alianza-petrolera/startseite/verein/22902/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Alianza_Petrolera_Escudo.png" alt=""></a>
+<a href="https://www.transfermarkt.co/cd-la-equidad-seguros-sa/startseite/verein/17425/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/La_Equidad_Seguros_logo.svg/1200px-La_Equidad_Seguros_logo.svg.png" alt=""></a>
+<a href="https://www.transfermarkt.co/ad-union-magdalena/startseite/verein/14680/saison_id/2022"><img class="logo2" src="https://1.bp.blogspot.com/-z31wn17YF_E/XTPxwpVBQiI/AAAAAAABVsE/-EOoBAk_jJQQsqoAN-sjwgZNA3JrHy5ZACLcBGAs/s1600/Union%2BMagdalena.png" alt=""></a>
+<a href="https://www.transfermarkt.co/deportivo-pasto/startseite/verein/10090/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Deportivo_Pasto_logo.png" alt=""></a>
+<a href="https://www.transfermarkt.co/once-caldas/startseite/verein/6984/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Once_Caldas_logo-svg.svg/846px-Once_Caldas_logo-svg.svg.png" alt=""></a>
+<a href="https://www.transfermarkt.co/atletico-bucaramanga/startseite/verein/6495/saison_id/2022"><img class="logo2" src="https://w7.pngwing.com/pngs/505/276/png-transparent-atletico-bucaramanga-dream-league-soccer-logo-football-football-text-logo-grass-thumbnail.png" alt=""></a>
+<a href="https://www.transfermarkt.co/envigado-fc/startseite/verein/7136/saison_id/2022"><img class="logo2" src="https://1.bp.blogspot.com/-f26u0pGWqT4/X59l4iHeu3I/AAAAAAABhOM/H9b5RKz8RNUK610J5ObSQXii6WDoCI2-ACLcBGAsYHQ/s16000/Envigado%2BFC.png" alt=""></a>
+<a href="https://www.transfermarkt.co/jaguares-de-cordoba/startseite/verein/39252/saison_id/2022"><img class="logo2" src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4206.png" alt=""></a>
+<a href="https://www.transfermarkt.co/cd-atletico-huila/startseite/verein/14583/saison_id/2022"><img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Escudo_de_Atl%C3%A9tico_Huila.svg/1200px-Escudo_de_Atl%C3%A9tico_Huila.svg.png" alt=""></a>
+<a href="https://www.transfermarkt.co/boyaca-chico-fc/startseite/verein/14649/saison_id/2022"><img class="logo2" src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5480.png" alt=""></a>
+
+<!-- escudos de la b -->
+<img class="logo2" src="https://1.bp.blogspot.com/-JQAbanPF-KQ/XjY6FmUm3lI/AAAAAAABXSY/ElCm9_JmmGAW4BSDhknZ8-h1D7Nyf_n6ACLcBGAsYHQ/s1600/Torneo%2BBetPlay.png" alt="">
+<img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Escudo_Boca_Juniors_de_Cali.png" alt="">
+<img class="logo2" src="https://1.bp.blogspot.com/-ljDPl8DbQ8A/YCiJ6_ZPtPI/AAAAAAAApn8/00ijz2B4uEc--UxH0t3ZwRr4cnE3TKTbwCLcBGAsYHQ/s512/escudo1.png" alt="">
+<img class="logo2" src="https://1.bp.blogspot.com/-Od4EweKB-Jk/Xl24vUeSAJI/AAAAAAAAasI/gxl2dDDHHGY_9Vm0xbHFBL7aRhVPvwu8wCLcBGAsYHQ/s320/escudo1.png" alt="">
+<img class="logo2" src="https://1.bp.blogspot.com/-7MCTEpSi-mk/YC2syVdSz9I/AAAAAAAApxk/npqGG6qRB94Ivje6JSJtgzCWdM9LAnuDACLcBGAsYHQ/s512/escudo1.png" alt="">
+<img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Escudo2_Cortulu%C3%A1_2022.png/190px-Escudo2_Cortulu%C3%A1_2022.png" alt="">
+<img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Escudo_2_Real_Soacha_Cundinamarca.png" alt="">
+<img class="logo2" src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4231.png" alt="">
+<img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Bogot%C3%A1_F%C3%BAtbol_Club.png" alt="">
+<img class="logo2" src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4197.png" alt="">
+<img class="logo2" src="https://dimayor.com.co/wp-content/uploads/2018/08/Logo-Llaneros-1.png" alt="">
+<img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Escudo_del_C%C3%BAcuta_Deportivo.svg/1018px-Escudo_del_C%C3%BAcuta_Deportivo.svg.png" alt="">
+<img class="logo2" src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/3839.png" alt="">
+<img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/0/08/ESCUDO_DEP_QUINDIO_2023.png" alt="">
+<img class="logo2" src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5479.png" alt="">
+<img class="logo2" src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4505.png" alt="">
+<img class="logo2" src="https://www.tigresfutbolclub.com/wp-content/uploads/2017/01/Logo-Tigres-FC.png" alt="">
+
+<img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Escudo_de_la_Federaci%C3%B3n_Colombiana_de_F%C3%BAtbol.png" alt="">
+<img class="logo2" src="https://files.lafm.com.co/assets/public/styles/i_a_750x375/public/2021-11/copa-libertadores.jpg.webp?kHraU2nakU1THgYEYO1Wyvg4a2uKKt3h&itok=ECncIo3_" alt="">
+<img class="logo2" src="data:image/png;base64,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" alt="">
+<img class="logo2" src="https://1.bp.blogspot.com/-RrrX0oERtwk/X2P6MeJf8wI/AAAAAAABgMM/l2mPA5H_qJ4hPfQIolgpvuFJ_W95dwQFACLcBGAsYHQ/s16000/Copa%2BBetPlay.png" alt="">    
+<img class="logo2" src="https://dimayor.com.co/wp-content/uploads/2019/03/conmebol_ico-1.png">
+<img class="logo2" src="https://dimayor.com.co/wp-content/uploads/2019/04/fifa-icono.png">
+
+
+<section id="hero">
+
+<h1>informate sobre <br />el futbol colonbiano</h1>
+    
+<p> La Categoría Primera A es el campeonato de primera división del <br>
+    fútbol profesional de Colombia, que es organizado por la División Mayor <br>
+    del Fútbol Colombiano, entidad dependiente de<br>
+    la Federación Colombiana de Fútbol</p>
+
+<p>Categoría Primera B, comúnmente conocida como Torneo BetPlay Dimayor
+         debido al patrocinio de la empresa de apuestas <br>
+          en línea BetPlay, es la
+           liga de fútbol de segunda división en Colombia.</p>
+
+<p>En la actualidad existen 20 clubes profesionales en la <br>
+             categoría Primera A y 16 en la categoría Primera B para un <br>
+              total de 36 clubes profesionales de fútbol en Colombia. </p>
+</section>
+
+<br>
+
+
+<section id="TP">
+
+<h1>LIGA BETPLAY POSICIONES</h1>
+<iframe src="https://resultados-bet.blogspot.com/2022/12/tabla-de-posiciones-liga-betplay-2023.html" height="500px" width="420px" frameborder="0"></iframe>
+
+</section>
+     
+<br><br><br>
+
+<section id="TD">
+    <h1>TABLA DEL DESCENSO</h1>
+<iframe src="https://resultados-bet.blogspot.com/2022/12/tabla-del-descenso-liga-betplay-2023.html" height="500px" width="420px" frameborder="0"></iframe>
+</section>
+
+<br><br><br>
+
+
+
+
+
+<section>
+
+<h3>
+<br>
+<br>
+ ©2023-resultados-bet|Joce Blanco polo
+<br>
+<br>
+<div class="social">
+<a target="_blank" href="https://www.tiktok.com/@el_blog_del_fpc"><img class="logo3" src="https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png"></a>
+<a target="_blank" href="https://www.youtube.com/channel/UCzEZc-Fp07MNxjdK7PPaHew"><img class="logo3" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"></a>
+<a target="_blank" href="https://www.facebook.com/joceangel.blancopolo.71"><img class="logo3" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_de_Facebook.png"></a>
+<a target="_blank" href="https://www.instagram.com/joce2604/"><img class="logo3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"></a>
+<a target="_blank" href="https://twitter.com/Fut_Jabp26?t=LcKzJP2mU22Lc91l-fp28Q&s=09"><img class="logo3" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" ></a>
+</div>
+<input class="ker" type="button" value="Actualizar" onclick="location.reload()"/>
+<br>
+<br> 
+<br>   
+</h3>
+
+</section>
+</body>
+</html>
